@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--Grey-900);
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    max-width: 20rem;
+    background-color: var(--Grey-800);
+    padding: 1.9rem;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: .9rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image{
+    width: 4.9rem;
+    height: 4.9rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--White);
+    margin-bottom: .5rem;
+}
+
+.address {
+    font-size: .75rem;
+    font-weight: 600;
+    color: var(--Green);
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    font-size: .75rem;
+    font-weight: 400;
+    color: var(--White);
+    margin-bottom: 1.24rem;
+}
+
+.social-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-links ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+.social-links li {
+    width: 100%;
+    margin-bottom: .8rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .75rem;
+    font-weight: 600;
+    width: 100%;
+    padding: .7rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--Grey-700);
+    transition: 0.4s ease;
+}
+.social-links a:hover {
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
